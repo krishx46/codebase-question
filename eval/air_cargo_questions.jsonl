@@ -1,0 +1,40 @@
+{"question":"What does the main React component show before any conversation starts?","file":"frontend/src/App.jsx","symbol":"App"}
+{"question":"How does the browser send a prompt to FastAPI, and how does it handle a failed request?","file":"frontend/src/App.jsx","symbol":"askQuestion"}
+{"question":"What happens when a user presses Enter in the chat input?","file":"frontend/src/App.jsx","symbol":"handleKeyDown"}
+{"question":"How does clicking a suggested prompt put text into the chat input?","file":"frontend/src/App.jsx","symbol":"selectSuggestion"}
+{"question":"What JSON message does the root API endpoint return?","file":"backend/main.py","symbol":"root"}
+{"question":"How does the /ask endpoint forward a question to the agent and build its response?","file":"backend/main.py","symbol":"ask"}
+{"question":"How does the agent discover available tools from the MCP server?","file":"agents/mcp_client/agent.py","symbol":"get_mcp_tools"}
+{"question":"How is a user question sent to Gemini together with tool definitions and system guidance?","file":"agents/mcp_client/agent.py","symbol":"call_gemini"}
+{"question":"How does the client invoke an MCP tool and decode its JSON result?","file":"agents/mcp_client/agent.py","symbol":"execute_tool"}
+{"question":"How does get_final_response combine the original question, Gemini's prior response, and the tool result?","file":"agents/mcp_client/agent.py","symbol":"get_final_response"}
+{"question":"How does the interactive agent loop handle repeated tool calls before printing its final answer?","file":"agents/mcp_client/agent.py","symbol":"main"}
+{"question":"How does the API-facing agent loop return a final response after one or more tool calls?","file":"agents/mcp_client/agent.py","symbol":"run_agent"}
+{"question":"Which MCP wrapper routes a request for shipment totals to the cargo summary query?","file":"agents/mcp_server/server.py","symbol":"get_cargo_summary"}
+{"question":"Which MCP wrapper exposes delivery, delay, and cancellation performance metrics?","file":"agents/mcp_server/server.py","symbol":"get_cargo_analytics_summary"}
+{"question":"Which MCP wrapper handles monthly shipment and revenue trends?","file":"agents/mcp_server/server.py","symbol":"get_trend"}
+{"question":"Which MCP wrapper routes date-range delay questions to the delay summary query?","file":"agents/mcp_server/server.py","symbol":"get_delay_summary"}
+{"question":"Which MCP wrapper is used to compare cargo routes?","file":"agents/mcp_server/server.py","symbol":"get_compare_routes"}
+{"question":"Which MCP wrapper passes a route and date range to the weather-risk delay investigation?","file":"agents/mcp_server/server.py","symbol":"get_investigate_delays"}
+{"question":"Which totals and shipment status counts does the cargo summary query return for a date range?","file":"agents/mcp_server/tools/cargo_tools.py","symbol":"query_cargo_summary"}
+{"question":"How does the performance query calculate delivery, delay, cancellation rates, and revenue per shipment?","file":"agents/mcp_server/tools/cargo_tools.py","symbol":"query_analyze_performance"}
+{"question":"How are monthly shipment trends and peak and lowest shipment months computed?","file":"agents/mcp_server/tools/cargo_tools.py","symbol":"query_analyze_trend"}
+{"question":"Which delay, cancellation, and in-transit indicators are aggregated for a date range?","file":"agents/mcp_server/tools/delay_tools.py","symbol":"query_delay_summary"}
+{"question":"Which metrics does the route comparison query calculate for each airport pair?","file":"agents/mcp_server/tools/delay_tools.py","symbol":"query_compare_routes"}
+{"question":"How does the delay investigation compare route delays across weather-risk categories, and what can it conclude?","file":"agents/mcp_server/tools/delay_tools.py","symbol":"query_investigate_delays"}
+{"question":"How does the data generator calculate the distance between two airports?","file":"python/generate_all.py","symbol":"calculate_distance"}
+{"question":"How are airport reference records written to the raw data folder?","file":"python/generate_all.py","symbol":"generate_airports"}
+{"question":"How does the generator select aircraft models and assign aircraft attributes and statuses?","file":"python/generate_all.py","symbol":"generate_aircraft"}
+{"question":"How are generated customers associated with a company, airport, and contact details?","file":"python/generate_all.py","symbol":"generate_customers"}
+{"question":"How is a departure timestamp selected within the configured date range?","file":"python/generate_all.py","symbol":"generate_departure_time"}
+{"question":"How does the generator turn flight distance into an arrival time?","file":"python/generate_all.py","symbol":"calculate_arrival_time"}
+{"question":"Which weighted outcomes determine a generated flight's status?","file":"python/generate_all.py","symbol":"generate_flight_status"}
+{"question":"How does the flight generator choose airport routes and populate flight records?","file":"python/generate_all.py","symbol":"generate_flights"}
+{"question":"How are weather conditions mapped to low, medium, or high delay risk?","file":"python/generate_all.py","symbol":"get_delay_risk"}
+{"question":"What temperature ranges does the generator use for each region?","file":"python/generate_all.py","symbol":"generate_temperature"}
+{"question":"How does the generated visibility range depend on weather conditions?","file":"python/generate_all.py","symbol":"generate_visibility"}
+{"question":"How are wind-speed ranges selected for different weather conditions?","file":"python/generate_all.py","symbol":"generate_wind"}
+{"question":"How does the generator create daily weather records for each airport?","file":"python/generate_all.py","symbol":"generate_weather"}
+{"question":"How does the generator choose cargo type and properties from an industry?","file":"python/generate_all.py","symbol":"get_cargo_details"}
+{"question":"How are customer, flight, weather-risk, and status data combined into shipment records?","file":"python/generate_all.py","symbol":"generate_shipment"}
+{"question":"In what order does the data-generation entry point create the raw datasets?","file":"python/generate_all.py","symbol":"main"}

@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+data/
+chroma_db/
+eval/results/*
+!eval/results/.gitkeep

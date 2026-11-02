@@ -1,0 +1,30 @@
+{"question":"How are passwords stored?","file":"auth.py","symbol":"hash_password"}
+{"question":"Where are password inputs salted and hashed?","file":"auth.py","symbol":"hash_password"}
+{"question":"How does login verify the submitted username and password?","file":"auth.py","symbol":"validate_credentials"}
+{"question":"Which function compares password digests safely?","file":"auth.py","symbol":"validate_credentials"}
+{"question":"How are signed bearer tokens created?","file":"auth.py","symbol":"create_token"}
+{"question":"How long does an issued token last?","file":"auth.py","symbol":"create_token"}
+{"question":"Where is an Authorization bearer token checked?","file":"auth.py","symbol":"require_auth"}
+{"question":"How does the app reject expired or invalid tokens?","file":"auth.py","symbol":"require_auth"}
+{"question":"How is tax included in a cart total?","file":"checkout.py","symbol":"calculate_total"}
+{"question":"Where is the basket subtotal calculated?","file":"checkout.py","symbol":"calculate_total"}
+{"question":"What happens when a payment card is declined?","file":"checkout.py","symbol":"charge_card"}
+{"question":"Which function calls the payment gateway?","file":"checkout.py","symbol":"charge_card"}
+{"question":"What happens after a customer submits checkout?","file":"checkout.py","symbol":"submit_checkout"}
+{"question":"Which code sends the checkout receipt email?","file":"checkout.py","symbol":"submit_checkout"}
+{"question":"How are email template values substituted?","file":"notifications.py","symbol":"render_template"}
+{"question":"Where can I find the email placeholder renderer?","file":"notifications.py","symbol":"render_template"}
+{"question":"Which function sends an email through the provider?","file":"notifications.py","symbol":"send_email"}
+{"question":"How does email sending handle a missing provider?","file":"notifications.py","symbol":"send_email"}
+{"question":"How many times is a failed delivery retried?","file":"notifications.py","symbol":"retry_delivery"}
+{"question":"Where is retry logic for notification delivery?","file":"notifications.py","symbol":"retry_delivery"}
+{"question":"How is a user looked up by ID?","file":"users.py","symbol":"get_user"}
+{"question":"Which function queries the users collection?","file":"users.py","symbol":"get_user"}
+{"question":"What fields are set when creating a user account?","file":"users.py","symbol":"create_user"}
+{"question":"Where is the email normalized during account creation?","file":"users.py","symbol":"create_user"}
+{"question":"How can a user account be disabled?","file":"users.py","symbol":"deactivate_user"}
+{"question":"Does deactivation delete a user record?","file":"users.py","symbol":"deactivate_user"}
+{"question":"Where does the login route create a token?","file":"routes.py","symbol":"login"}
+{"question":"What response is returned for invalid login credentials?","file":"routes.py","symbol":"login"}
+{"question":"Which route submits a cart to the checkout service?","file":"routes.py","symbol":"checkout_route"}
+{"question":"How does the profile endpoint authenticate and load a user?","file":"routes.py","symbol":"profile"}
